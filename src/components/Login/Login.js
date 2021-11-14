@@ -24,14 +24,6 @@ const Login = () => {
                 <div >
                     <h2>Please Login</h2>
                     <br />
-                    {/* <form>
-                    <input type="email" name="" id="" placeholder="Your Email" />
-                    <br />
-                    <input type="password" name="" id="" />
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-                <p>new to ema-john website? <Link to="/register">Create Account</Link></p>*/}
 
 
                     <button

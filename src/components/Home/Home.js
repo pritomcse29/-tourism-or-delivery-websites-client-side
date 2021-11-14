@@ -3,7 +3,7 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import { addToDb } from '../../utilities/fakedb';
 
-// import './Home.css';
+
 import './Home.css';
 import useCart from '../../hooks/useCart';
 import { Link } from 'react-router-dom';
@@ -58,12 +58,7 @@ const Home = () => {
         <div>
             <img src="https://image.freepik.com/free-psd/top-view-free-food-delivery-arrangement-with-mock-up_23-2148421291.jpg" style={{ width: "100%" }}></img>
 
-            {/* <div className="search-container">
-                <input
-                    type="text"
-                    onChange={handleSearch}
-                    placeholder="Search Product" />
-            </div> */}
+
             <div className="Home-container">
                 <h2 className="text-center">Foods:</h2>
                 <hr />

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import Inventory from './components/Inventory/Inventory';
+
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
@@ -32,9 +32,7 @@ function App() {
             <PrivateRoute path="/review">
               <OrderReview></OrderReview>
             </PrivateRoute>
-            <PrivateRoute path="/inventory">
-              <Inventory></Inventory>
-            </PrivateRoute>
+
             <PrivateRoute path="/shipping">
               <Shipping></Shipping>
             </PrivateRoute>
@@ -53,9 +51,7 @@ function App() {
             <Route path="/users/add">
               <AddUser></AddUser>
             </Route>
-            {/* <Route path="/users/add">
-              <AddUser></AddUser>
-            </Route> */}
+
             <Route path="/users/update/:id">
               <UpdateUser></UpdateUser>
             </Route>

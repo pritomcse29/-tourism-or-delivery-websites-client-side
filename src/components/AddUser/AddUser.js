@@ -31,10 +31,7 @@ const AddUser = () => {
         })
             .then(res => res.json())
             .then(data => {
-                // if (data.insertedId) {
-                //     alert('Successfully added the user.')
-                //     e.target.reset();
-                // }
+
                 if (data.insertedId) {
                     alert('Order Processed Successfully');
                     clearTheCart()
@@ -54,29 +51,11 @@ const AddUser = () => {
                 Phone:<input placeholder="phone number" type="tel" ref={phoneRef} name="" id="" /> <br /><br />
                 Address:<input type="text" placeholder="Address" ref={addressRef} name="" id="" /> <br /><br />
 
-                {/* orderUpdate:<input type="text" placeholder="Address" ref={orderUpdateRef} value="pending" name="" id="" /> <br /><br /> */}
+
                 <input type="submit" value="Submit" />
             </form>
         </div>
 
-        /*
-        
-        <div>
-                   <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
-       
-                       <input defaultValue={user.displayName} {...register("name")} />
-       
-                       <input defaultValue={user.email} {...register("email", { required: true })} />
-                       {errors.email && <span className="error">This field is required</span>}
-                       <input placeholder="Address" defaultValue="" {...register("address")} />
-                       <input placeholder="City" defaultValue="" {...register("city")} />
-                       <input placeholder="phone number" defaultValue="" {...register("phone")} />
-       
-                       <input type="submit" />
-                   </form>
-               </div>
-        
-        */
 
 
     );

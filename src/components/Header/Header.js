@@ -14,9 +14,7 @@ const Header = () => {
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/review">Order Review</NavLink>
                 <Link to="/users">Manage All Orders</Link>
-                {/* <Link to="/users/add">Add User</Link> */}
 
-                {/* <NavLink to="/inventory">Manage Inventory</NavLink> */}
                 {user.email && <span style={{ color: 'white' }}>Hello {user.displayName} </span>}
                 {
                     user.email ?
