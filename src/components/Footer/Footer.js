@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Footer.css';
 const Footer = () => {
     return (
@@ -18,18 +18,15 @@ const Footer = () => {
                     <small>Mymensingh info:01714-161223</small><br />
                     <samll>Narayanganj  info:01714-161223</samll><br />
                     <small>Noakhali info:01714-161223</small><br />
-                    <small>Official: sarkarHealthCare@ncta.com</small>
+                    <small>Official: sarkarFOodDelivery@ncta.com</small>
 
                     <p>(Available : 24 Hour)</p>
                 </div>
                 <div class="col anchor-style">
 
-                    <p> <Link to="/home">Home</Link></p>
-                    <p><Link to="/login-registration">Login</Link></p>
-                    <p><Link to="/services">Services</Link></p>
-                    <p><Link to="/doctors">Doctors</Link></p>
-                    <p>  <Link to="/contact">Contacts</Link></p>
-                    <p> <Link to="/about">About</Link></p>
+                    <NavLink to="/home">Home</NavLink> <br /><br />
+                    <NavLink to="/review">Order Review</NavLink><br /><br />
+                    <Link to="/users">Manage All Orders</Link>
 
 
                 </div>
@@ -43,7 +40,7 @@ const Footer = () => {
 
 
                     <p>  Privacy Policy</p>
-                    <p>Get Appointment:</p>
+                    <p>Emergency:</p>
                     <hr />
                     <span>10678</span><br />
                     <span>10678</span><br />

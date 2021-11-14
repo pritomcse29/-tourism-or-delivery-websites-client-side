@@ -4,7 +4,7 @@ import { useState } from "react"
 const useProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/foods')
+        fetch('https://stark-plains-49197.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);

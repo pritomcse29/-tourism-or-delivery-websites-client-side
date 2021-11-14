@@ -17,7 +17,7 @@ const Home = () => {
     const [displayProducts, setDisplayProducts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/foods`)
+        fetch('https://stark-plains-49197.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

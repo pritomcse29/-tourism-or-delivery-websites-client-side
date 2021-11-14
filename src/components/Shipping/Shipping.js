@@ -10,7 +10,7 @@ const Shipping = () => {
     const onSubmit = data => {
         const savedCart = getStoredCart();
         data.order = savedCart;
-        fetch('http://localhost:5000/orders', {
+        fetch('https://stark-plains-49197.herokuapp.com/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
