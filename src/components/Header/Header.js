@@ -12,7 +12,7 @@ const Header = () => {
             <h1> Food Delivery</h1>
             <nav>
                 <NavLink to="/home">Home</NavLink>
-                <NavLink to="/review">Order Review</NavLink>
+                <NavLink to="/review">My Order</NavLink>
                 <Link to="/users">Manage All Orders</Link>
 
                 {user.email && <span style={{ color: 'white' }}>Hello {user.displayName} </span>}
