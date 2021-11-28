@@ -8,9 +8,9 @@ const Footer = () => {
                 <div class="col">
 
 
-                    <h4>OUR INFO CENTER:</h4>
+                    <h4>OUR INFO :</h4>
                     <hr />
-                    <small>Chattogram info:01714-161223</small><br />
+                    <small>CHattogram info:01714-161223</small><br />
                     <small>Dhaka info:01714-161223</small><br />
                     <small>Bogra info:01714-161223</small><br />
                     <small>Khulna info:01714-161223</small><br />
